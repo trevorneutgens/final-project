@@ -68,6 +68,9 @@ def display_records():
 
 # this function adds a new student record
 def add_student():
+    
+    display_records()
+    
     student_id = input("Enter student ID: ")
     first_name = input("Enter first name: ")
     last_name = input("Enter last name: ")
@@ -102,7 +105,9 @@ def add_student():
 
 # this function updates an existing student record
 def update_student():
-
+    
+    display_records()
+    
     student_id = input("Enter the student ID of the student you wish to update: ")
 
 
@@ -156,6 +161,8 @@ def update_student():
 
 # this function deletes a student record
 def delete_student():
+    display_records()
+    
     student_id = input("Enter the student ID of the student you wish to delete: ")
 
 
